@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Thymeleaf課題</title>
 
 </head>
 <body>
-    <h1 th:text="${welcomeMessage}"></h1>
+    <main>
+    <div><h1 th:text="${welcomeMessage}"></h1></div>
+        　　　　<h2>入力画面</h2>
+           　<h3>値を入力してください</h3>
     <form method="post" action="/output">
         <input type="text" name="inputValue"/>
         <input type="submit" value="送信"/>
     </form>
+    </main>
     <p th:text="${previousMessage}"></p>
 </body>
 </html>
